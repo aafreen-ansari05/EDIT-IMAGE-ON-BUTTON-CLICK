@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image-Edit</title>
+</head>
+<body>
+    <div class="container">
+        <img id="content" src="air-balloons.jpg" height="330px" width="400px">
+    </div>
+        <div class="buttons">
+            <button  id="change" class="btn">Brightness</button>
+            <button id="change1" class="btn">Blur</button>
+            <button id="change2" class="btn">Contrast</button>
+            <button id="change3" class="btn">Gray</button>
+            <button id="change4" class="btn">Saturation</button>
+            <button id="change5" class="btn">Invert</button>
+            <button id="change6" class="btn">Opacity</button>
+            <button id="change7" class="btn">Sepia</button>
+        </div>
+</body>
+<script>
+    let a = document.getElementById("change") ;
+    let b = document.getElementById("content");
+    a.addEventListener("click", function () {
+        console.error(b.style.filter);
+        if (b.style.filter == "brightness(200%)") {
+            b.style.filter = "none";
+        } else {
+            b.style.filter = "brightness(200%)";
+        }
+    })
+
+    let c = document.getElementById("change1");
+    let d = document.getElementById("content");
+    c.addEventListener("click", function () {
+        if (d.style.filter == "blur(5px)") {
+            d.style.filter = "none";
+        } else {
+            d.style.filter = "blur(5px)";
+        }
+    })
+
+    let e = document.getElementById("change2");
+    let f = document.getElementById("content");
+    e.addEventListener("click", function () {
+        if (f.style.filter == "contrast(200%)") {
+            f.style.filter = "none";
+        } else {
+            f.style.filter = "contrast(200%)";
+        }
+    })
+
+
+    let g = document.getElementById("change3");
+    let h = document.getElementById("content");
+    g.addEventListener("click", function () {
+        if (h.style.filter == "grayscale(100%)") {
+            h.style.filter = "none";
+        } else {
+            h.style.filter = "grayscale(100%)";
+        }
+    })
+
+
+    let i = document.getElementById("change4");
+    let j = document.getElementById("content");
+    i.addEventListener("click", function () {
+        if (j.style.filter == "saturate(8)") {
+            j.style.filter = "none";
+        } else {
+            j.style.filter = "saturate(8)";
+        }
+    })
+
+
+    let k = document.getElementById("change5");
+    let l = document.getElementById("content");
+    k.addEventListener("click", function () {
+        if (l.style.filter == "invert(100%)") {
+            l.style.filter = "none";
+        } else {
+            l.style.filter = "invert(100%)";
+        }
+    })
+
+    let m = document.getElementById("change6");
+    let n = document.getElementById("content");
+    m.addEventListener("click", function () {
+        if (n.style.filter == "opacity(30%)") {
+            n.style.filter = "none";
+        } else {
+            n.style.filter = "opacity(30%)";
+        }
+    })
+
+
+    let o = document.getElementById("change7");
+    let p = document.getElementById("content");
+    o.addEventListener("click", function () {
+        if (p.style.filter == "sepia(100%)") {
+            p.style.filter = "none";
+        } else {
+            p.style.filter = "sepia(100%)";
+        }
+    })
+
+
+</script>
+</html>
